@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
+:root {
+  --primary: #ff5100;
+  --secondary: #0011ff;
+  --tertiary: #007922;
+  --white: #f1f1f1;
+  --black: #3a3a3a;
+  --font-main: 'Bagel Fat One', cursive;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+
 body {
   padding: 2rem;
 }
 
 .wrapper {
   max-width: 1000px;
-  margin: 0 auto;<a href="index.html">Home</a>
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bagel Fat One', cursive;
+  font-family: var(--font-main);
   letter-spacing: 0.085rem;
-  color: #59ba7d;
+  color: var(--primary);
 }
 
 p, ul, ol, li {
@@ -21,7 +31,7 @@ p, ul, ol, li {
 }
 
 header {
-  background: #59ba7d;
+  background: var(--primary);
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -30,13 +40,13 @@ header h1 {
   font-size: 3rem;
   line-height: 0;
   color: white;
-  font-family: 'Bagel Fat One', cursive;
+  font-family: var(--font-main);
 }
 
 nav {
   display: flex;
   gap: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   text-transform: uppercase;
 
 }
@@ -44,6 +54,7 @@ nav {
 nav a {
   text-decoration: none;
   letter-spacing: 0.02rem;
+  color: var(--secondary)
 }
 nav a:hover {
   text-decoration: underline;
@@ -56,5 +67,5 @@ h3 {
 
 h3 + p {
   margin-top: 0;
-  color: rgb(113, 113, 113);
+  color: var(--black);
 }
