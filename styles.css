@@ -70,3 +70,12 @@ h3 + p {
   margin-top: 0;
   color: var(--black);
 }
+
+a {
+  color: rgb(255, 153, 0);
+}
+
+a:hover {
+  background: yellow;
+  color: blue;
+}
